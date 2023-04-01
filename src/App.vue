@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <h1>{{ message }}</h1>
     <HeaderNav />
     <router-view />
   </div>
@@ -13,7 +12,6 @@ import HeaderNav from './components/headerNav';
 export default {
   data(){
     return{
-        massage:'test'
     }
   },
   name: 'App',
