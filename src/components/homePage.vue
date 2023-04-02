@@ -39,11 +39,31 @@
             <a href ="#" class="to_be_client">Стать корпоративным клиентом</a>
         </div>
        </section>
+       <carousel :transition="3000" :autoplay="4000" :items-to-show="2.5" :wrap-around="true">
+    <slide :key="slide">
+      <p>Расчет, за получение услуги по истечению периода обслуживания без авансовой предоплаты, дает возможность оптимизировать управление транспортными расходами</p>
+    </slide>
+    <slide :key="slide">
+      <p>Контроль определения стоимости поездки (поездка на автомобилях, эконом и бизнес классов, производится при помощи таксометра, сопровождается выдачей квитанции) и предоставление детальной отчетности по каждой из них гарантируют предельную точность и прозрачность финансовых расходов</p>
+    </slide>
+    <slide :key="slide">
+      <p>Осуществление ежедневного медицинского контроля допуска водительского состава к управлению транспортными средствами, а также технического контроля исправности автомобилей, обеспечивает безопасность оказания услуг</p>
+    </slide>
+    <slide :key="slide">
+      <p>Ежедневно (независимо от погодных условий) автомобили проходят уборочно-моечное обслуживание</p>
+    </slide>
+    <template #addons>
+      <pagination />
+    </template>
+  </carousel>
     </div>
+
 </template>
 
-<script>
 
+<script>
+import 'vue3-carousel/dist/carousel.css'
+import { Carousel, Slide, Pagination } from 'vue3-carousel'
 export default{
     data(){
         return{
@@ -51,19 +71,23 @@ export default{
         isActive2:false
         }
     },
+    name: 'WrapAround',
+    components: {
+    Carousel,
+    Slide,
+    Pagination
+  },
     methods:{
         formTabs(){
             this.isActive = !this.isActive;
             this.isActive2 = !this.isActive2
-        }
-            
+        }      
     },
     mounted(){
 
             
 }
 }
-
 </script>
 
 <style scoped>
@@ -270,5 +294,22 @@ textarea.active{
     color: black;
     background-color: #FFFFFF;
 }
+.carousel__slide{
+    background-color: #323232;
+    color:white;
+    border-radius: .5vw;
+    margin: 2vw 5vw;
+    width: 10vw;
+    height: 20vw;
+    text-align: left;
+    padding: 2vw;
+}
 
+.carousel__icon{
+    background-color: #323232;
+    color: white;
+}
+.carousel__track{
+    transition: all ease-in-out 3s;
+}
 </style>

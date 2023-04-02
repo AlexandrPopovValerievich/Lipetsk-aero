@@ -2,12 +2,14 @@
   <div id="app">
     <HeaderNav />
     <router-view />
+    <FooterCom />
+
   </div>
 </template>
 
 <script>
 import HeaderNav from './components/headerNav';
-
+import FooterCom from './components/footerCom.vue'
 
 export default {
   data(){
@@ -16,7 +18,8 @@ export default {
   },
   name: 'App',
   components:{
-    HeaderNav
+    HeaderNav,
+    FooterCom
   }
 
 }
@@ -46,4 +49,5 @@ export default {
   display: flex;
   flex-direction: column;
 }
+
 </style>
