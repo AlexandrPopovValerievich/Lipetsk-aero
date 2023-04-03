@@ -1,23 +1,28 @@
 <template>
   <div id="app">
     <HeaderNav />
-    <HeaderHead />
+    <router-view />
+    <FooterCom />
   </div>
 </template>
 
 <script>
-import HeaderNav from './components/headerNav.vue';
-import HeaderHead from './components/headerHead.vue';
+import HeaderNav from './components/headerNav';
+import FooterCom from './components/footerCom.vue'
+
 
 export default {
-
+  data(){
+    return{
+    }
+  },
   name: 'App',
   components:{
     HeaderNav,
-    HeaderHead
+    FooterCom
   }
-
 }
+
 </script>
 
 <style>
@@ -27,9 +32,6 @@ export default {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Jura', sans-serif;
-}
-#app {
-
 }
 .wrapper{
   display: flex;

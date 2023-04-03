@@ -3,8 +3,8 @@
         <nav class="nav wrapper space-between">
             <div class="nav_item">
                 <ul class="ul wrapper">
-                    <li class="li"><a href=""> Главная</a></li>
-                    <li class="li"><a href=""> О нас</a></li>
+                    <li class="li"><router-link to="/"> Главная</router-link></li>
+                    <li class="li"><router-link to="/aboutUs"> О нас</router-link></li>
                     <li class="li"><a href=""> Стать клиентом</a></li>
                     <li class="li"><a href=""> Бизнесу</a></li>
                     <li class="li"><a href=""> Вакансии</a></li>
