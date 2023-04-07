@@ -53,7 +53,7 @@ export default{
     background: center url(../assets/bg-footer.png) no-repeat;
     background-size: cover;
     color: white;
-    height: 30vw;
+    height: 25vw;
     display: flex;
     justify-content: space-between;
 }
