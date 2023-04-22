@@ -12,7 +12,7 @@ const routes = [
         path: "/about",
         name: "aboutUs",
         component: aboutUs,
-      },
+      }
   ];
   const router = createRouter({
     history: createWebHistory(),
