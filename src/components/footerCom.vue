@@ -12,7 +12,13 @@
                     </ul>
                 </div>
                 <div class="right wrapper-col">
-                    <a class="tel" href="tel:+7 4247 77 77 77">+7 4247 77 77 77</a>
+                    <span class="wrapper">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="0.5" y="0.5" width="21" height="21" rx="7.5" stroke="white"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6882 11.6317C13.3475 14.1504 13.9508 11.2365 15.6441 12.8395C17.2765 14.3856 18.2147 14.6954 16.1465 16.6542C15.8874 16.8515 14.2414 19.2245 8.45673 13.7458C2.67134 8.2664 5.17472 6.70541 5.38297 6.46005C7.45624 4.49577 7.77757 5.3898 9.40999 6.93587C11.1032 8.53955 8.02876 9.11297 10.6882 11.6317Z" fill="white"/>
+                     </svg>
+                     <a class="tel" href="tel:+7 4247 906 906">906 906</a>
+                    </span>
                     <a href="#" class="write_us footer_button">Написать нам</a>
                     <a href="#" class="take_a_call footer_button">Заказать звонок</a>
                     <span class="soc">
@@ -47,7 +53,7 @@ export default{
     background: center url(../assets/bg-footer.png) no-repeat;
     background-size: cover;
     color: white;
-    height: 30vw;
+    height: 25vw;
     display: flex;
     justify-content: space-between;
 }
@@ -77,6 +83,9 @@ export default{
 .soc img{
     width: 2vw;
     margin-right: 1vw;
+}
+.tel{
+    margin-left: 1vw;
 }
 
 </style>
