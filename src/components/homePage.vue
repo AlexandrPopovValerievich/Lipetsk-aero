@@ -1,19 +1,4 @@
 <script setup>
-import { reactive } from 'vue';
-import axios from 'axios'
-
-const review = reactive({
-    autor: "Alex"
-})
-const submit = () => {
-    console.log("submited!")
-
-    axios.post('mail.php', review, {
-        headers: {
-            'Content-Type': 'multipart/form-data'
-        }
-    })
-}
 </script>
 <template>
     <div id="generalHead">
@@ -30,11 +15,13 @@ const submit = () => {
                 <textarea class="textarea" :class="{active: isActive2}" name="message">Сообщение</textarea>
                 <button class="btn" type="submit">Отправить</button>
             </form>
+            
             <div class="get wrapper-col">
                 <h1 class="h1">Более 10 лет на рынке</h1>
                 <h4 class="h4">Комфортно, безопасно и в нужное время доставим Вас до любой точки города </h4>
                 <button type="submit" class="takeCar"><h3 class="h3"><p class="p">Заказать автомобиль</p></h3></button>
             </div>
+        </div>
         </section>
         <section class="section">
             <h2 class="h2">Почему мы?</h2>
@@ -143,7 +130,6 @@ export default{
     background: no-repeat center url(../assets/bg.png);
     background-size: cover;
 }
-
 .test {
     display: none;
 }
@@ -155,9 +141,9 @@ export default{
 .form {
     width: 25vw;
     padding-bottom: 1.5vw;
-    background-color: #ffffff38;
-    backdrop-filter: blur(5px);
-    border: solid 1px #9d9d9d;
+    background-color: #A9A9A937;
+    backdrop-filter: blur(10px);
+    border: solid 1px #ffffff26;
     border-radius: .5vw;
     transition: all ease 0.5s;
 }
@@ -242,8 +228,8 @@ textarea.active {
     background-color: #1d1d1d;
     border-bottom-left-radius: .5vw;
     border-top-right-radius: .5vw;
-    border-bottom: solid 1px #9d9d9d;
-    border-left: solid 1px #9d9d9d;
+    border-bottom: solid 1px #ffffff26;
+    border-left: solid 1px #ffffff26;
     ;
     margin: -1px -1px 0 0;
 }
@@ -256,8 +242,8 @@ textarea.active {
     background-color: #1d1d1d;
     border-bottom-right-radius: .5vw;
     border-top-left-radius: .5vw;
-    border-bottom: solid 1px #9d9d9d;
-    border-right: solid 1px #9d9d9d;
+    border-bottom: solid 1px #ffffff26;
+    border-right: solid 1px #ffffff26;
     margin: -1px 0 0 -1px;
 }
 
@@ -387,4 +373,91 @@ textarea.active {
 
 .carousel__track {
     transition: all ease-in-out 3s;
-}</style>
+}
+@media (max-width: 800px){
+    .header {
+        margin-top: -15vw;
+        height: 100vh;
+        background: no-repeat center url(../assets/bg.png);
+        background-size: cover;
+    }
+    .section{
+        padding:0vw 2vw;
+    }
+    .content{
+        flex-direction: column;
+        align-items:center;
+    }
+    .form{
+        margin-top:25vw;
+        width:90%;
+        height: 100vw;
+        border-radius: 2vw;
+        padding-bottom: 10vw;
+    }
+    .input,
+    .textarea {
+        width: 85%;
+        margin: auto;
+        height: 10vw;
+        padding: 0.5vw;
+        outline: none;
+    }
+    .textarea {
+    height: 20vw;
+    color: #cecece;
+    }
+    .tab {
+    padding-top: 2vw;
+    height: 10vw;
+    width: 50%;
+    }
+    .tab.active {
+    padding-top: 2vw;
+    height: 10vw;
+    width: 50%;
+    border-bottom-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    margin: -1px -1px 0 0;
+    }
+    .tab.active2 {
+    padding-top: 2vw;
+    height: 10vw;
+    width: 50%;
+    border-bottom-right-radius: 2vw;
+    border-top-left-radius: 2vw;
+    margin: -1px 0px 0 -1px;
+    }
+    .get .h1,.get .h4{
+        display:none;
+    }
+    .get{
+        align-items:center;
+        width:60%;
+        margin-top:20vw
+    }
+    .btn{
+        margin-top:5vw;
+        padding: 2vw 0;
+    }
+    .takeCar {
+        font-size: 4vw;
+        border-radius: 5vw;
+        width: 100%;
+        padding: 2vw 0 2vw 0;
+    }
+    .ul_section {
+    padding-left:5vw
+    }
+    .li_section {
+        margin-bottom:2vw
+    }
+    .ul_section h3{
+        font-size:4.5vw
+    }
+    .h2 {
+        font-size: 6vw;
+        margin-bottom: 3vw;
+    }
+}
+</style>
