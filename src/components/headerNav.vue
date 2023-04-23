@@ -4,10 +4,10 @@
             <div class="nav_item">
                 <ul class="ul wrapper">
                     <li class="li"><router-link to="/"> Главная</router-link></li>
-                    <li class="li"><router-link to="/aboutUs"> О нас</router-link></li>
-                    <li class="li"><a href=""> Стать клиентом</a></li>
-                    <li class="li"><a href=""> Бизнесу</a></li>
-                    <li class="li"><a href=""> Вакансии</a></li>
+                    <li class="li"><router-link to="/about"> О нас</router-link></li>
+                    <li class="li"><router-link to="/clients"> Стать клиентом</router-link></li>
+                    <li class="li"><router-link to="/forBusiness"> Бизнесу</router-link></li>
+                    <li class="li"><router-link to="/vacancies"> Вакансии</router-link></li>
                 </ul>
             </div>
             <div class="nav_item">

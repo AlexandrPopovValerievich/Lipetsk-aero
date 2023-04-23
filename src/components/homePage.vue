@@ -15,7 +15,7 @@
             </form>
             <div class="get wrapper-col">
                 <h1 class="h1">Более 10 лет на рынке</h1>
-                <h4 class="h4">Комфортно, безопасно и в нужное время доставим Вас до любой точки города </h4>
+                <h4 class="h4">Комфортно, безопасно и в нужное время доставим Вас до любой точки города</h4>
                 <button type="submit" class="takeCar"><h3 class="h3"><p class="p">Заказать автомобиль</p></h3></button>
             </div>
         </div>
@@ -68,7 +68,7 @@ export default{
     data(){
         return{
         isActive:true,
-        isActive2:false
+        isActive2:false,
         }
     },
     name: 'WrapAround',
@@ -81,12 +81,12 @@ export default{
         formTabs(){
             this.isActive = !this.isActive;
             this.isActive2 = !this.isActive2
-        }      
-    },
-    mounted(){
-
+        },
+        
             
-}
+    },
+    mounted(){         
+},
 }
 </script>
 
