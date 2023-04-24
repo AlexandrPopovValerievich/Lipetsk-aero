@@ -1,20 +1,3 @@
-<script setup>
-import { reactive } from 'vue';
-import axios from 'axios'
-
-const review = reactive({
-    autor: "Alex"
-})
-const submit = () => {
-    console.log("submited!")
-
-    axios.post('mail.php', review, {
-        headers: {
-            'Content-Type': 'multipart/form-data'
-        }
-    })
-}
-</script>
 <template>
     <div id="generalHead">
         <section class="section header">
