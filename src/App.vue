@@ -49,4 +49,7 @@ export default {
   display: flex;
   flex-direction: column;
 }
+.align-center{
+  align-items:center
+}
 </style>
