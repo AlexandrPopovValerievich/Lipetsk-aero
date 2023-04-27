@@ -12,13 +12,10 @@
                     </ul>
                 </div>
                 <div class="right wrapper-col">
-                    <span class="wrapper">
-                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a class="tel wrapper align-center" href="tel:+7 4247 906 906"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="21" height="21" rx="7.5" stroke="white"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6882 11.6317C13.3475 14.1504 13.9508 11.2365 15.6441 12.8395C17.2765 14.3856 18.2147 14.6954 16.1465 16.6542C15.8874 16.8515 14.2414 19.2245 8.45673 13.7458C2.67134 8.2664 5.17472 6.70541 5.38297 6.46005C7.45624 4.49577 7.77757 5.3898 9.40999 6.93587C11.1032 8.53955 8.02876 9.11297 10.6882 11.6317Z" fill="white"/>
-                     </svg>
-                     <a class="tel" href="tel:+7 4247 906 906">906 906</a>
-                    </span>
+                     </svg> <p class="tel">906 906</p></a>
                     <a href="#" class="write_us footer_button">Написать нам</a>
                     <a href="#" class="take_a_call footer_button">Заказать звонок</a>
                     <span class="soc">
@@ -86,6 +83,38 @@ export default{
 }
 .tel{
     margin-left: 1vw;
+}
+@media (max-width: 800px){
+    .footer{
+        margin-top: 5vw;
+        padding: 5vw;
+        color: white;
+        height: 75vw;
+        display: flex;
+        justify-content: space-between;
+        font-size: 3vw;
+    }
+    .footer li{
+        list-style-type: none;
+        margin-bottom: 2vw;
+    }
+    .footer a{
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5vw;
+
+}
+    .footer_button{
+        width: 30vw;
+        border: solid 1px #ffffff;
+        border-radius: 5vw;
+        text-align: center;
+        padding: .8vw 0vw;
+    }
+    .soc img{
+        width: 8vw;
+        margin-right: 2vw;
+    }
 }
 
 </style>

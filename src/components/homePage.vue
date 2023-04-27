@@ -58,7 +58,7 @@
                 <a href="#" class="to_be_client">Стать корпоративным клиентом</a>
             </div>
         </section>
-        <carousel :transition="3000" :autoplay="4000" :items-to-show="2.5" :wrap-around="true">
+        <carousel :transition="3000" :autoplay="4000" :items-to-show="1.75" :wrap-around="true">
             <slide :key="slide">
                 <p>Расчет, за получение услуги по истечению периода обслуживания без авансовой предоплаты, дает возможность
                     оптимизировать управление транспортными расходами</p>
@@ -362,6 +362,7 @@ textarea.active {
     height: 20vw;
     text-align: left;
     padding: 2vw;
+    font-size: 1.5vw;
 }
 
 .carousel__icon {
@@ -445,7 +446,8 @@ textarea.active {
         padding: 2vw 0 2vw 0;
     }
     .ul_section {
-    padding-left:5vw
+    padding-left:5vw;
+    margin-bottom:15vw;
     }
     .li_section {
         margin-bottom:2vw
@@ -457,5 +459,46 @@ textarea.active {
         font-size: 6vw;
         margin-bottom: 3vw;
     }
-}
+    .submit_an_aplication {
+    border-radius: 5vw;
+    border: solid .4vw black;
+    padding: 2vw 5vw;
+    font-size: 3vw;
+    margin: 30vw;
+    }
+    .paragraph {
+    margin-top: 10vw;
+    font-size: 2.5vw;
+    text-align: center;
+    }
+    .content_3rd {
+    color: #FFFFFF;
+    padding: 20vw 2vw;
+    font-size: 4vw;
+    line-height:1.5;
+    }
+    .to_be_client {
+    width: 60%;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 3vw;
+    border: solid .2vw #FFFFFF;
+    border-radius: 5vw;
+    padding: 2vw 0vw;
+    margin: auto;
+    margin-top: 10vw;
+    }
+    .carousel__slide {
+    background-color: #323232;
+    color: white;
+    border-radius: 2vw;
+    margin: 5vw 5vw;
+    width: 10vw;
+    height: 50vw;
+    text-align: left;
+    padding: 5vw;
+    font-size: 2.5vw;
+    }
+    }
 </style>
